@@ -5,7 +5,7 @@ from .models import *
 @admin.register(Sponser)
 class SponserAdmin(admin.ModelAdmin):
     list_display = ("full_name", "organization_name", "amount", "status")
-    list_display_links = ("full_name",)
+    list_display_links = ("full_name",) 
     search_fields = ("full_name",)
 
 
